@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #f8dcd9;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 8rem 8rem;
+}
+
+main div:first-child { /* Seleciona a div que contém a imagem do logo */
+    display: flex;
+    justify-content: center;
+}
+
+main div:first-child img { /* Seleciona a imagem do logo */
+    width: 40%;
+}
+
+main > div:nth-of-type(2) { /* Seleciona a div do formulário */
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 30%;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.form-group { /* Classe para os grupos de label e input */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 18px;
+}
+
+.form-group input {
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 1px #ad918d solid;
+}
+
+.button-container { /* Div que contém o botão */
+    display: flex;
+    justify-content: end;
+}
+
+.button-container button {
+    background-color: #ad918d;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none; /* Adicionado para remover a borda padrão do botão */
+    color: white; /* Adicionado para uma melhor legibilidade do texto do botão */
+}
