@@ -13,16 +13,16 @@ main {
     padding: 8rem 8rem;
 }
 
-main div:first-child { /* Seleciona a div que contém a imagem do logo */
+main div:first-child { 
     display: flex;
     justify-content: center;
 }
 
-main div:first-child img { /* Seleciona a imagem do logo */
+main div:first-child img { 
     width: 40%;
 }
 
-main > div:nth-of-type(2) { /* Seleciona a div do formulário */
+main > div:nth-of-type(2) { 
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -31,7 +31,7 @@ main > div:nth-of-type(2) { /* Seleciona a div do formulário */
     padding: 2rem;
 }
 
-.form-group { /* Classe para os grupos de label e input */
+.form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -47,7 +47,7 @@ main > div:nth-of-type(2) { /* Seleciona a div do formulário */
     border: 1px #ad918d solid;
 }
 
-.button-container { /* Div que contém o botão */
+.button-container { 
     display: flex;
     justify-content: end;
 }
@@ -57,6 +57,6 @@ main > div:nth-of-type(2) { /* Seleciona a div do formulário */
     padding: 1rem 2rem;
     border-radius: 10px;
     cursor: pointer;
-    border: none; /* Adicionado para remover a borda padrão do botão */
-    color: white; /* Adicionado para uma melhor legibilidade do texto do botão */
+    border: none; 
+    color: white;
 }
