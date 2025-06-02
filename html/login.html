@@ -9,25 +9,31 @@
 </head>
 <body>
     <main>
-        <div>
-            <img src="../assets/logo-better-nobackground.png">
+        <div id="register-button-container">
+            <button class="login-button" type="submit">Registrar-se</button>
         </div>
 
-        <div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="input-email" placeholder="Insira seu email">
+        <section class="login-section">
+            <div class="login-img-container">
+                <img class="login-img" src="../assets/logo-better-nobackground.png">
             </div>
 
-            <div class="form-group">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
-            </div>
+            <div>
+                <div class="login-form">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="input-email" placeholder="Insira seu email">
+                </div>
 
-            <div class="button-container">
-                <button type="submit">Login</button>
+                <div class="login-form">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
+                </div>
+
+                <div id="register-button-container">
+                    <button class="login-button" type="submit">Login</button>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
