@@ -10,30 +10,37 @@
 <body>
     <main>
         <div id="register-button-container">
-            <button class="login-button" type="submit">Registrar-se</button>
+            <a href="register.html"><button class="login-button" >Registrar-se</button></a>
         </div>
 
         <section class="login-section">
-            <div class="login-img-container">
-                <img class="login-img" src="../assets/logo-better-nobackground.png">
+            <div class="login-logo">
+                <div class="login-img-container">
+                    <img class="login-img" src="../assets/logo-better-nobackground.png">
+                </div>
+                <h1 class="login-title">Sinhá Bolos e Lanches</h1>
             </div>
 
-            <div>
-                <div class="login-form">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="input-email" placeholder="Insira seu email">
-                </div>
+            <div class="form-container">
+                <form class="login-form">
+                    <div class="login-input-container">
+                        <label for="email">Email</label>
+                        <input type="email" class="login-input" name="email" id="input-email" placeholder="Insira seu email">
+                    </div>
 
-                <div class="login-form">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
-                </div>
+                    <div class="login-input-container">
+                        <label for="password">Senha</label>
+                        <input type="password" class="login-input" name="password" id="input-password" placeholder="Insira sua senha">
+                    </div>
 
-                <div id="register-button-container">
-                    <button class="login-button" type="submit">Login</button>
-                </div>
+                    <div id="login-button-container">
+                        <button id="login-button" class="login-button" type="submit">Login</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
+
+    <footer></footer>
 </body>
 </html>

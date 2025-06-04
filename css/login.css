@@ -1,61 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* #f6dcdb - rosa claro
+#09ab83 - verde do chapéu
+#e0726c - vermelho claro
+#c01f13 - vermelho forte
+#f9f9f9 - branco diferente */
+
 body {
     background-color: #f8dcd9;
     font-family: 'Poppins', sans-serif;
 }
 
-.main-section { 
+.login-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-title {
+    font-size: 24px;
+    color: #c01f13;
+}
+
+.login-section { 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 24px;
-    padding: 2rem 6rem;
 }
 
-.main-button-container {
-    
+#register-button-container {
+    display: flex;
+    justify-content: end;
+    padding-top: 1rem;
+    padding-right: 2rem;
 }
 
-.main-button {
-    font-size: 18px;
+#login-button-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.login-button {
+    border: none;
     border-radius: 8px;
     padding: 1rem 2rem;
-    border: none;
-    background-color: #ad918d;
-}
-
-.main-img-container {
-    display: flex;
-    align-items: center;
-}
-
-.main-img { 
-    width: 45%;
-}
-
-main > div:nth-of-type(2) { 
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    width: 30%;
-    border-radius: 8px;
-    padding: 2rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-group label {
+    background-color: #c01f13;
+    color: #ffffff;
+    font-weight: 700;
     font-size: 18px;
 }
 
-.form-group input {
-    padding: 1rem 1rem;
-    border-radius: 10px;
-    border: 1px #ad918d solid;
+#login-button {
+    width: 100%;
+}
+
+.login-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-img { 
+    width: 35%;
+}
+
+.form-container {
+    width: 25%;
+    padding: 1rem;
+    border: 1px solid #c01f13;
+    border-radius: 8px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 14px;
+}
+
+.login-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+.login-input {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
 }
