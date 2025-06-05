@@ -3,51 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/register.css"> 
     <title>Registrar</title>
 </head>
 <body>
-    <main>
-        <div>
-            <img src="../assets/logo-better-nobackground.png">
-        </div>
-
-        <div>
-            <div class="form-group">
-                <label for="email">Nome</label>
-                <input type="text" name="email" id="input-email" placeholder="Insira seu email">
+    <main>        
+        <div class="register-main-container">
+            <div class="register-top-container">
+                <a class="register-top-link" href="login.html">
+                    <i class="fas fa-arrow-left"></i>
+                    <p>Voltar</p>
+                </a>
             </div>
 
-            <div class="form-group">
-                <label for="password">Email</label>
-                <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
-            </div>
+            <section class="register-section">
+                <div class="register-logo">
+                    <div class="register-img-container">
+                        <img class="register-img" src="../assets/logo-better-nobackground.png">
+                    </div>
+                    <h1 class="register-title">Sinhá Bolos e Lanches</h1>
+                </div>
 
-            <div class="form-group">
-                <label for="password">Telefone</label>
-                <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
-            </div>
+                <div class="form-container">
+                    <form class="register-form">
+                        <div class="register-input-container">
+                            <label for="name">Nome*</label>
+                            <input type="text" class="register-input" name="name" id="input-name" placeholder="Insira seu nome" required>
+                        </div>
 
-            <div class="form-group">
-                <label for="password">CPF</label>
-                <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
-            </div>
+                        <div class="register-input-container">
+                            <label for="email">Email*</label>
+                            <input type="email" class="register-input" name="email" id="input-email" placeholder="Insira seu email" required>
+                        </div>
 
-            <div class="form-group">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
-            </div>
+                        <div class="register-input-container">
+                            <label for="phone">Telefone*</label>
+                            <input type="text" class="register-input" name="phone" id="input-phone" placeholder="Insira seu telefone" required>
+                        </div>
 
-            <div class="form-group">
-                <label for="password">Confirmar senha</label>
-                <input type="password" name="password" id="input-password" placeholder="Insira sua senha">
-            </div>
+                        <div class="register-input-container">
+                            <label for="cpf">CPF*</label>
+                            <input type="text" class="register-input" name="cpf" id="input-cpf" placeholder="Insira seu CPF" required>
+                        </div>
 
-            <div class="button-container">
-                <button type="submit">Login</button>
-            </div>
+                        <div class="register-input-container">
+                            <label for="password">Senha*</label>
+                            <input type="password" class="register-input" name="password" id="input-password" placeholder="Insira sua senha" required>
+                        </div>
+
+                        <div class="register-input-container">
+                            <label for="password">Confirmar senha*</label>
+                            <input type="password" class="register-input" name="password" id="input-confirm-password" placeholder="Insira sua senha novamente" required>
+                        </div>
+
+                        <div id="register-button-container">
+                            <button id="register-button" class="register-button" type="submit">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
     </main>
+
+    <footer>
+        <div class="register-footer-container">
+            <p class="register-footer-text">©2025 Sinhá Bolos e Lanches. Todos os direitos reservados.</p>
+            <p class="register-footer-text"><a class="register-footer-link" href="index.html">Início</a> | <a class="register-footer-link" href="about.html">Sobre</a> | <a class="register-footer-link" href="contact.html">Contato</a> | <a class="register-footer-link" href="team.html">Equipe</a></p>
+        </div>
+    </footer>
 </body>
 </html>
