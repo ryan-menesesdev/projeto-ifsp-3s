@@ -36,6 +36,10 @@ body {
     border-radius: 8px;
 }
 
+.register-top-link:hover {
+    background-color: #e7c0bb;
+}
+
 .register-section { 
     display: flex;
     justify-content: center;

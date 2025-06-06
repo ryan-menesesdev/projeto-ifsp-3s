@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* #f6dcdb - rosa claro
+#09ab83 - verde do chapéu
+#e0726c - vermelho claro
+#c01f13 - vermelho forte
+#f9f9f9 - branco diferente */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    gap: 48px;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+/* ================================================================================= */
+
+.team-header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 2rem;
+    background-color: #facfca;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-header-link {
+    text-decoration: none;
+}
+
+.header-logo {
+    height: 80px;
+    width: auto;
+}
+
+.header-logo-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #c01f13;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px    ;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-header-cart-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.header-icon {
+    padding: 0.5rem;
+    font-size: 24px;
+    color: #c01f13; 
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.header-icon:hover {
+    background-color: #f0f0f0;
+}
+
+.team-header-cart-count {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    background-color: #09ab83; 
+    color: white;
+    font-size: 12px;
+    border-radius: 60%;
+    padding: 0.3rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+.team-header-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.team-header-dropdown {
+    background-color: transparent;
+    border: none;
+    color: #c01f13;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.team-header-dropdown:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    color: #c01f13;
+}
+
+.team-header-dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.team-header-dropdown-menu {
+    display: none; 
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.team-header-dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.team-header-dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.team-header-dropdown-menu.show {
+    display: block;
+}
+
+/* ================================================================================= */
+
+.team-main-container {
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.team-top-container {
+    display: flex;
+    justify-content: start;
+}
+
+.team-top-link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #facfca;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+}
+
+.team-top-link:hover {
+    background-color: #e7c0bb;
+}
+
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 5rem 0rem 10rem 0rem;
+}
+
+.team-section-title {
+    color: #c01f13;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.team-section-container {
+    display: flex;
+    gap: 128px;
+}
+
+.team-section-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.team-section-img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team-section-img:hover {
+    opacity: 0.5;
+}
+
+.team-section-name {
+    color: #c01f13;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* ================================================================================= */
+
+.team-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0rem;
+    background-color: #facfca;
+    gap: 12px;
+}
+
+.team-footer-text {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.team-footer-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.team-footer-text:hover {
+    opacity: 1;
+}
