@@ -36,8 +36,8 @@ Para o desenvolvimento deste projeto, utilizamos uma variedade de ferramentas e 
 
 Este projeto foi desenvolvido em colaboração pela seguinte equipe:
 
-* **Igor Dias Modesto** - BD2 + ADM
-* **Jean Carlo Macedo** - IHC + ADM
+* **Igor Dias Modesto** - IHC + ADM
+* **Jean Carlo Macedo** - BD2 + ADM
 * **Ryan Davi Oliveira de Meneses** - WEB1 + ADM
 
 ---
