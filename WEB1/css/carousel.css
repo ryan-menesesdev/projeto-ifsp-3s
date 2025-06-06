@@ -1,0 +1,104 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    height: 40vh; 
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.7s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6dcdb;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(31, 41, 55, 1);
+    color: #fff;
+    padding: 12px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.carousel-nav-btn.left {
+    left: 16px;
+}
+
+.carousel-nav-btn.right {
+    right: 16px;
+}
+
+.carousel-nav-btn:hover {
+    background-color: rgba(31, 41, 55, 0.75);
+}
+
+.play-pause-control-container {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 10;
+}
+
+.carousel-control-btn {
+    background-color: rgba(31, 41, 55, 0.5);
+    color: #fff;
+    padding: 12px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-control-btn:hover {
+    background-color: rgba(31, 41, 55, 0.75);
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(107, 114, 128, 1);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+    background-color: #fff;
+}
