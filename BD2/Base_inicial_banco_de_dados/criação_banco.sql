@@ -66,7 +66,7 @@ CREATE TABLE item_pedido (
     pedido_id INT NOT NULL,                               -- Chave estrangeira para o pedido correspondente
     produto_id INT NOT NULL,                              -- Chave estrangeira para o produto do item
     quantidade INT NOT NULL,                              -- A quantidade do produto neste item do pedido
-    FOREIGN KEY (pedido_id) REFERENCES pedido(id)         -- Vincula o item ao pedido;
+    FOREIGN KEY (pedido_id) REFERENCES pedido(id),         -- Vincula o item ao pedido;
     FOREIGN KEY (produto_id) REFERENCES produto(id)       -- Vincula o item ao produto
 );
 
@@ -79,6 +79,6 @@ CREATE TABLE admin_pedido (
     acaoRealizada VARCHAR(100) NOT NULL,               -- A descrição da ação (ex: 'Status alterado', 'Comentário Adicionado')
     dataHora DATETIME NOT NULL,                        -- A data e hora em que a ação foi registrada
     comentario VARCHAR(100),                           -- Comentários adicionais sobre a ação
-    FOREIGN KEY (pedido_id) REFERENCES pedido(id)      -- Vincula a ação ao pedido;
+    FOREIGN KEY (pedido_id) REFERENCES pedido(id),      -- Vincula a ação ao pedido;
     FOREIGN KEY (usuario_id) REFERENCES usuario(id)    -- Vincula a ação ao funcionário
 );
