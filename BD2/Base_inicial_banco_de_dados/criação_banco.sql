@@ -17,8 +17,6 @@ CREATE TABLE produto (
     preco DECIMAL(10,2) NOT NULL,
     categoria_id INT NOT NULL,
     FOREIGN KEY (categoria_id) REFERENCES categoria(id)
-        ON UPDATE CASCADE
-        ON DELETE RESTRICT
 );
 
 -- TABELA: USUARIO
@@ -59,11 +57,7 @@ CREATE TABLE pedido (
     usuario_id INT NOT NULL,
     pagamento_id INT NOT NULL,
     FOREIGN KEY (usuario_id) REFERENCES usuario(id)
-        ON UPDATE CASCADE
-        ON DELETE RESTRICT,
     FOREIGN KEY (pagamento_id) REFERENCES pagamento(id)
-        ON UPDATE CASCADE
-        ON DELETE RESTRICT,
     CHECK (statusPedido IN ('Em Processamento', 'Concluído', 'Cancelado', 'Entregue'))
 );
 
@@ -74,11 +68,7 @@ CREATE TABLE item_pedido (
     produto_id INT NOT NULL,
     quantidade INT NOT NULL,
     FOREIGN KEY (pedido_id) REFERENCES pedido(id)
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
     FOREIGN KEY (produto_id) REFERENCES produto(id)
-        ON UPDATE CASCADE
-        ON DELETE RESTRICT
 );
 
 -- TABELA: ADMIN_PEDIDO
@@ -90,9 +80,5 @@ CREATE TABLE admin_pedido (
     dataHora DATETIME NOT NULL,
     comentario VARCHAR(100),
     FOREIGN KEY (pedido_id) REFERENCES pedido(id)
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
     FOREIGN KEY (usuario_id) REFERENCES usuario(id)
-        ON UPDATE CASCADE
-        ON DELETE RESTRICT
 );
