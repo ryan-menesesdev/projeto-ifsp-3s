@@ -38,7 +38,7 @@ Este projeto foi desenvolvido em colaboração pela seguinte equipe:
 
 * **Igor Dias Modesto** - IHC + ADM
 * **Jean Carlo Silva de Macedo** - IHC + BD2 + ADM
-* **Ryan Davi Oliveira de Meneses** - WEB1 + ADM
+* **Ryan Davi Oliveira de Meneses** - IHC + WEB1 + ADM
 
 ---
 
