@@ -1,3 +1,7 @@
+body {
+    background-color: #f8dcd9;
+}
+
 .register-main-container {
     padding: 1rem 1rem;
 }
@@ -103,27 +107,4 @@
 
 #register-button {
     width: 100%;
-}
-
-.register-footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0rem;
-    background-color: #facfca;
-    gap: 12px;
-}
-
-.register-footer-text {
-    font-size: 14px;
-    opacity: 0.6;
-}
-
-.register-footer-link {
-    text-decoration: none;
-    color: #000000;
-}
-
-.register-footer-text:hover {
-    opacity: 1;
 }

@@ -1,3 +1,26 @@
+.about-top-container {
+    display: flex;
+    justify-content: start;
+    padding-left: 1rem;
+}
+
+.about-top-link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #facfca;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+}
+
+.about-top-link:hover {
+    background-color: #e7c0bb;
+}
+
 .about-section {
     display: flex;
     flex-direction: column;
