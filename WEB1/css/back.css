@@ -11,3 +11,27 @@ body {
 img {
     -webkit-user-drag: none;
 }
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.top-link {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #facfca;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.top-link:hover {
+    background-color: #e7c0bb;
+}

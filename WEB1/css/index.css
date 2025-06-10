@@ -10,6 +10,8 @@
     color: #c01f13;
     font-size: 32px;
     font-weight: 500;
+    padding: 1rem 0rem;
+    text-decoration-line: underline;
 }
 
 .index-section { 

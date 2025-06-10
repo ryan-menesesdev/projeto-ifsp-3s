@@ -5,28 +5,6 @@
     gap: 32px;
 }
 
-.item-top-container {
-    display: flex;
-    justify-content: start;
-}
-
-.item-top-link {
-    display: flex;
-    gap: 10px;
-    text-decoration: none;
-    align-items: center;
-    color: #000000;
-    font-weight: 700;
-    font-size: 18px;
-    background-color: #facfca;
-    padding: 1rem 1rem;
-    border-radius: 8px;
-}
-
-.item-top-link:hover {
-    background-color: #e7c0bb;
-}
-
 .item-section {
     display: flex;
     flex-direction: column;

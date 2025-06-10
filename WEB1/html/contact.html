@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css//back.css">
-    <link rel="stylesheet" href="../css/team.css"> 
+    <link rel="stylesheet" href="../css/back.css">
+    <link rel="stylesheet" href="../css/contact.css"> 
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
-    <title>Equipe</title>
+    <title>Contato</title>
 </head>
 <body>
     <header>
@@ -44,44 +44,65 @@
     </header>
 
     <main>
-        <div class="team-main-container">
-            <div class="team-top-container">
-                <a class="team-top-link" href="index.html">
-                    <i class="fas fa-arrow-left"></i>
-                    <p>Voltar</p>
-                </a>
-            </div>
+        <div class="top-container">
+            <a class="top-link" href="index.html">
+                <i class="fas fa-arrow-left"></i>
+                <p>Voltar</p>
+            </a>
+        </div>
             
-            <section class="team-section">
-                <h1 class="team-section-title">Desenvolvedores</h2>
-                <div class="team-section-container">
-                    <div class="team-section-img-container">
-                        <img class="team-section-img" src="../assets/avatar_placeholder.png">
-                        <p class="team-section-name">Igor Modesto</p>
-                    </div>
+        <section class="contact-section">
+            <div class="contact-section-title-container">
+                <h1 class="contact-section-title">Contato</h2>
+            </div>
+            <div class="contact-section-content">
+                <img class="contact-section-img" src="../assets/logo-better-nobackground.png">
+                <div class="contact-section-form-container">
+                    <form class="contact-section-form">
+                        <div class="contact-section-value">
+                            <label class="contact-section-label" for="full-name">Nome completo</label>
+                            <input class="contact-section-input" type="text" name="full-name" placeholder="Inserir nome">
+                        </div>
 
-                    <div class="team-section-img-container">
-                        <img class="team-section-img" src="../assets/avatar_placeholder.png">
-                        <p class="team-section-name">Jean Macedo</p>
-                    </div>
+                        <div class="contact-section-value">
+                            <label class="contact-section-label" for="email">Email</label>
+                            <input class="contact-section-input" type="email" name="email" placeholder="Inserir email">
+                        </div>
 
-                    <div class="team-section-img-container">
-                        <img class="team-section-img" src="../assets/avatar_placeholder.png">
-                        <p class="team-section-name">Ryan Meneses</p>
+                        <div class="contact-section-value">
+                            <label class="contact-section-label" for="message">Mensagem</label>
+                            <input class="contact-section-input" type="text" name="message" placeholder="Inserir mensagem">
+                        </div>
+
+                        <button class="contact-section-button" type="submit">Enviar mensagem</button>
+                    </form>
+
+                    <div class="contact-section-form-media">
+                        <p class="contact-section-form-text">Acesse também nossas redes sociais abaixo!</p>
+
+                        <div class="contact-section-form-icon">
+                            <a href="https://wa.me/11933495532" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp button"></i>
+                            </a>
+
+                            <a href="https://instagram.com/sinhaoliveira39" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram button"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-container">
             <p class="footer-text">©2025 Sinhá Bolos e Lanches. Todos os direitos reservados.</p>
             <p class="footer-text">
-                <a class="footer-link" href="team.html">Início</a> | 
+                <a class="footer-link" href="contact.html">Início</a> | 
                 <a class="footer-link" href="about.html">Sobre</a> | 
                 <a class="footer-link" href="contact.html">Contato</a> | 
-                <a class="ooter-link" href="team.html">Equipe</a></p>
+                <a class="footer-link" href="contact.html">Equipe</a></p>
         </div>
     </footer>
 

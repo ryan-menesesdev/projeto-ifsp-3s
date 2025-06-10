@@ -13,12 +13,16 @@
 <body>
     <main>
         <div class="login-main-container">
-            <div class="login-top-container">
-                <a class="login-top-link" href="index.html">
+            <div class="top-container">
+                <a class="top-link" href="index.html">
                     <i class="fas fa-arrow-left"></i>
                     <p>Voltar</p>
                 </a>
-                <a href="register.html"><button id="register-button" class="login-button" >Registrar-se</button></a>
+                <div class="register-container">
+                    <a href="register.html">
+                        <button id="register-button" class="login-button">Registrar-se</button>
+                    </a>
+                </div>                
             </div>
 
             <section class="login-section">
@@ -32,12 +36,12 @@
                 <div class="form-container">
                     <form class="login-form">
                         <div class="login-input-container">
-                            <label for="email">Email</label>
+                            <label class="login-label" for="email">Email</label>
                             <input type="email" class="login-input" name="email" id="input-email" placeholder="Insira seu email" required>
                         </div>
 
                         <div class="login-input-container">
-                            <label for="password">Senha</label>
+                            <label class="login-label" for="password">Senha</label>
                             <input type="password" class="login-input" name="password" id="input-password" placeholder="Insira sua senha" required>
                         </div>
 

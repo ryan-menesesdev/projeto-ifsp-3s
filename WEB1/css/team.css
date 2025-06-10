@@ -1,30 +1,7 @@
 .team-main-container {
-    padding: 0rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
-
-.team-top-container {
-    display: flex;
-    justify-content: start;
-}
-
-.team-top-link {
-    display: flex;
-    gap: 10px;
-    text-decoration: none;
-    align-items: center;
-    color: #000000;
-    font-weight: 700;
-    font-size: 18px;
-    background-color: #facfca;
-    padding: 1rem 1rem;
-    border-radius: 8px;
-}
-
-.team-top-link:hover {
-    background-color: #e7c0bb;
 }
 
 .team-section {

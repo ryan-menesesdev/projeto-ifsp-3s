@@ -6,28 +6,6 @@ body {
     padding: 1rem 1rem;
 }
 
-.register-top-container {
-    display: flex;
-    justify-content: start;
-}
-
-.register-top-link {
-    display: flex;
-    gap: 10px;
-    text-decoration: none;
-    align-items: center;
-    color: #000000;
-    font-weight: 700;
-    font-size: 18px;
-    background-color: #facfca;
-    padding: 1rem 1rem;
-    border-radius: 8px;
-}
-
-.register-top-link:hover {
-    background-color: #e7c0bb;
-}
-
 .register-section { 
     display: flex;
     justify-content: center;
@@ -55,10 +33,10 @@ body {
 }
 
 .register-title {
-    font-size: 24px;
+    font-size: 32px;
     color: #c01f13;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .form-container {
@@ -76,6 +54,10 @@ body {
     gap: 32px;
 }
 
+.register-label {
+    font-size: 18px;
+}
+
 .register-input-container {
     display: flex;
     flex-direction: column;
@@ -84,9 +66,9 @@ body {
 
 .register-input {
     padding: 1rem 1.5rem;
-    border: none;
+    border: 1px solid #000000;
     border-radius: 8px;
-    opacity: 0.7;
+    font-size: 18px;
 }
 
 .register-button {
@@ -94,6 +76,7 @@ body {
     border-radius: 8px;
     padding: 1rem 2rem;
     background-color: #c01f13;
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-weight: 700;
     font-size: 18px;
