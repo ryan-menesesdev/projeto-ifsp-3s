@@ -14,8 +14,9 @@
 }
 
 .item-container {
-    display: flex;
-    gap: 100px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 100px; 
 }
 
 .item-section-title {
@@ -72,7 +73,7 @@
 }
 
 .item-section-name:active {
-    color: #83160e  ;
+    color: #83160e;
 }
 
 .item-section-button {

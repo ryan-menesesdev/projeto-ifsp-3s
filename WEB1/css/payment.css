@@ -1,0 +1,44 @@
+.payment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 9rem 0rem;
+}
+
+.payment-section-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.payment-section-title {
+    color: #c01f13;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.payment-section-down {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+span {
+    color: #c01f13;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.payment-section-text {
+    font-size: 18px;
+}
+
+.payment-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: disc
+}
+
