@@ -45,7 +45,7 @@ Este projeto foi desenvolvido em colaboração pela seguinte equipe:
 ## 🌐 Acesso ao Projeto Hospedado
 
 Você pode acessar a versão hospedada do projeto através do link abaixo:
-[espaço para link da aplicação]
+https://codigo-proj-web-1.vercel.app
 
 ---
 
