@@ -1,3 +1,0 @@
-Legenda: 
-1:N → Um para muitos
-N:1 → Muitos para um 
