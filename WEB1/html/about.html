@@ -2,42 +2,60 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Conheça a história, missão e valores da Sinhá Bolos e Lanches, sua loja de delícias caseiras.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="../assets/logo-better-nobackground.png">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css//back.css">
+    <link rel="stylesheet" href="../css/back.css">
     <link rel="stylesheet" href="../css/about.css"> 
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
-    <title>Sobre</title>
+    <title>Sobre Nós - Sinhá Bolos e Lanches</title>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html" class="header-link">
+            <a href="index.html" class="header-link" aria-label="Página Inicial de Sinhá Bolos e Lanches">
                 <div class="header-left">
-                    <img src="../assets/logo-better-nobackground.png" alt="Logo da Empresa" class="header-logo">
-                    <p class="header-logo-title">Sinhá Bolos e Lanches</p>
+                        <img src="../assets/logo-better-nobackground.png" alt="Logo da Sinhá Bolos e Lanches" class="header-logo">
+                        <span class="header-logo-title">Sinhá Bolos e Lanches</span>
                 </div>
             </a>
-            <nav class="header-right">
+            <nav class="header-right" aria-label="Navegação principal">
+                <div class="header-accessibility-container">
+                    <button id="header-accessibility-toggle-btn" class="header-dropdown" aria-label="Abrir menu de acessibilidade" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                    </button>
+                    <div id="header-accessibility-menu" class="header-accessibility-menu">
+                        <div class="header-acessibility-content">
+                            <label for="font-size-control" class="header-acessibility-label">Tamanho da Fonte</label>
+                            <div id="font-size-control" class="header-acessibility-btn-container">
+                                <button id="font-decrease-btn" class="header-acessibility-btn" aria-label="Diminuir fonte">A-</button>
+                                <button id="font-reset-btn" class="header-acessibility-btn" aria-label="Resetar fonte">A</button>
+                                <button id="font-increase-btn" class="header-acessibility-btn" aria-label="Aumentar fonte">A+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="header-cart-container">
-                    <a href="cart.html">
-                        <i class="fas fa-shopping-cart header-icon"></i>
-                        <span class="header-cart-count">0</span>
+                    <a href="cart.html" aria-label="Ver carrinho de compras">
+                        <i class="fas fa-shopping-cart header-icon" aria-hidden="true"></i>
+                        <span id="cart-counter" class="header-cart-count">0</span>
                     </a>
                 </div>
                 <div class="header-dropdown-container">
-                    <p class="header-dropdown" id="menuDropdownToggle">
-                        Menu <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </p>
-                    <div class="header-dropdown-menu" id="menuDropdown">
-                        <a href="index.html">Início</a>
-                        <a href="about.html">Sobre</a>
-                        <a href="contact.html">Contato</a>
-                        <a href="team.html">Equipe</a>
-                        <a href="login.html">Sair</a>
+                    <button class="header-dropdown" id="menuDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown">
+                        Menu <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </button>
+                    <div class="header-dropdown-menu" id="menuDropdown" role="menu">
+                        <a href="index.html" role="menuitem" aria-current="page">Início</a>
+                        <a href="orders.html" role="menuitem" aria-current="page">Meus pedidos</a>
+                        <a href="about.html" role="menuitem">Sobre</a>
+                        <a href="contact.html" role="menuitem">Contato</a>
+                        <a href="team.html" role="menuitem">Equipe</a>
+                        <a href="#" id="auth-link-dropdown" role="menuitem">Sair</a>
                     </div>
                 </div>
             </nav>
@@ -46,56 +64,58 @@
 
     <main>
         <div class="top-container">
-            <a class="top-link" href="index.html">
-                <i class="fas fa-arrow-left"></i>
-                <p>Voltar</p>
+            <a class="top-link" href="index.html" aria-label="Voltar para a página inicial">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span>Voltar</span>
             </a>
         </div>
 
-        <section class="about-section">
-            <div class="about-section-logo">
-                <img class="about-section-img" src="../assets/logo-better-nobackground.png">
+        <article class="about-section">
+            <header class="about-section-logo">
+                <img class="about-section-img" src="../assets/logo-better-nobackground.png" alt="">
                 <h1 class="about-section-title">Sinhá Bolos e Lanches</h1>
-            </div>
+            </header>
 
-            <div class="about-section-content">
-                <h2 class="about-section-subtitle">Sobre a Sinhá Bolos e Lanches</h2>
+            <section class="about-section-content" aria-labelledby="sobre-titulo">
+                <h2 class="about-section-subtitle" id="sobre-titulo">Sobre a Sinhá Bolos e Lanches</h2>
                 <p class="about-section-text">
                     Bem-vindo à Sinhá Bolos e Lanches, onde a paixão pela culinária e o desejo de adoçar (e salgar!) a vida se encontram! 
                     Somos mais do que uma simples loja de alimentos e bebidas; somos um pedacinho de carinho e sabor entregue em cada pedido.
                 </p>
-            </div>
+            </section>
 
-            <div class="about-section-content">
-                <h2 class="about-section-subtitle">Nossa História e Paixão</h2>
+            <section class="about-section-content" aria-labelledby="historia-titulo">
+                <h2 class="about-section-subtitle" id="historia-titulo">Nossa História e Paixão</h2>
                 <p class="about-section-text">
                     A Sinhá Bolos e Lanches nasceu de um sonho de trazer receitas caseiras e sabores autênticos para o dia a dia de nossos clientes. 
                     Começamos com a simplicidade e a dedicação de quem faz tudo com amor, e rapidamente percebemos que o que realmente nos move é a alegria de ver um sorriso no rosto de quem saboreia nossas criações. 
                     Cada bolo, cada salgado, cada bebida é preparado com ingredientes frescos e selecionados, seguindo tradições que remetem ao aconchego do lar.
                 </p>
-            </div>
+            </section>
 
-            <div class="about-section-content">
-                <h2 class="about-section-subtitle">Nossa Missão</h2>
+            <section class="about-section-content" aria-labelledby="missao-titulo">
+                <h2 class="about-section-subtitle" id="missao-titulo">Nossa Missão</h2>
                 <p class="about-section-text">
                     Nossa missão é oferecer produtos de alta qualidade, sabor inesquecível e com a praticidade que o seu dia a dia exige. 
                     Queremos ser a sua escolha favorita para aqueles momentos especiais, para um lanche rápido ou para celebrar a vida com muito sabor e doçura.
                 </p>
-            </div>
+            </section>
 
-            <div class="about-section-content">
-                <h2 class="about-section-subtitle">Nossos Valores</h2>
+            <section class="about-section-content" aria-labelledby="valores-titulo">
+                <h2 class="about-section-subtitle" id="valores-titulo">Nossos Valores</h2>
                 <ul class="about-section-list">
-                    <li class="about-section-text"><span class="about-section-markup">Sabor Autêntico</span> Priorizamos receitas que resgatam o verdadeiro gosto da comida caseira e fresca.</li>
-                    <li class="about-section-text"><span class="about-section-markup">Qualidade</span>: Utilizamos apenas os melhores ingredientes para garantir a excelência em cada produto.</li>
-                    <li class="about-section-text"><span class="about-section-markup">Carinho</span>: Cada item é preparado com a dedicação e o cuidado que você merece.</li>
-                    <li class="about-section-text"><span class="about-section-markup">Praticidade</span>: Buscamos facilitar o seu acesso a alimentos deliciosos, com agilidade e conveniência.</li>
-                    <li class="about-section-text"><span class="about-section-markup">Comunidade</span>: Acreditamos em construir relações duradouras com nossos clientes, fornecedores e com a comunidade local.</li>
+                    <li class="about-section-text">
+                        <strong class="about-section-markup">Sabor Autêntico:</strong> Priorizamos receitas que resgatam o verdadeiro gosto da comida caseira e fresca.
+                    </li>
+                    <li class="about-section-text"><strong class="about-section-markup">Qualidade:</strong> Utilizamos apenas os melhores ingredientes para garantir a excelência em cada produto.</li>
+                    <li class="about-section-text"><strong class="about-section-markup">Carinho:</strong> Cada item é preparado com a dedicação e o cuidado que você merece.</li>
+                    <li class="about-section-text"><strong class="about-section-markup">Praticidade:</strong> Buscamos facilitar o seu acesso a alimentos deliciosos, com agilidade e conveniência.</li>
+                    <li class="about-section-text"><strong class="about-section-markup">Comunidade:</strong> Acreditamos em construir relações duradouras com nossos clientes, fornecedores e com a comunidade local.</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="about-section-content">
-                <h2 class="about-section-subtitle">O Que Oferecemos</h2>
+            <section class="about-section-content" aria-labelledby="ofertas-titulo">
+                <h2 class="about-section-subtitle" id="ofertas-titulo">O Que Oferecemos</h2>
                 <p class="about-section-text">Na Sinhá Bolos e Lanches, você encontra uma variedade de delícias para todos os gostos e momentos:</p>
                 <ul class="about-section-list">
                     <li class="about-section-text"><a class="about-section-link" href="./cakes.html">Bolos Especiais</a>: Desde os clássicos bolos de festa até opções mais simples para o café da tarde, todos feitos com receitas que você vai amar.</li>
@@ -103,29 +123,34 @@
                     <li class="about-section-text"><a class="about-section-link" href="./drinks.html">Bebidas Refrescantes</a>: Sucos naturais, cafés, refrigerantes e outras opções para acompanhar suas delícias.</li>
                     <li class="about-section-text"><a class="about-section-link" href="./desserts.html">Sobremesas</a>: Uma seleção de doces irresistíveis para fechar sua refeição ou para um mimo especial.</li>
                 </ul>
-            </div>
+            </section>
 
             <div class="about-section-end">
                 <p class="about-section-text">Agradecemos por escolher a Sinhá Bolos e Lanches</p>
                 <p class="about-section-text">Horário de funcionamento: 10h - 18h</p>
                 <p class="about-section-text">
-                    Entre em <a class="about-section-link" href="./contact.html">contato</a> quando quiser!</p>
+                    Entre em <a class="about-section-link" href="./contact.html">contato</a> quando quiser!
+                </p>
             </div>
-        </section>
+        </article>
     </main>
 
     <footer>
         <div class="footer-container">
             <p class="footer-text">©2025 Sinhá Bolos e Lanches. Todos os direitos reservados.</p>
             <p class="footer-text">Horário de funcionamento: 10h - 18h</p>
-            <p class="footer-text">
-                <a class="footer-link" href="index.html">Início</a> | 
-                <a class="footer-link" href="about.html">Sobre</a> | 
-                <a class="footer-link" href="contact.html">Contato</a> | 
-                <a class="footer-link" href="team.html">Equipe</a></p>
+            <nav aria-label="Navegação do rodapé">
+                <p class="footer-text">
+                    <a class="footer-link" href="index.html">Início</a> | 
+                    <a class="footer-link" href="about.html">Sobre</a> | 
+                    <a class="footer-link" href="contact.html">Contato</a> | 
+                    <a class="footer-link" href="team.html">Equipe</a>
+                </p>
+            </nav>
         </div>
     </footer>
 
     <script src="../js/dropdown.js"></script>
+    <script src="../js/main.js" type="module"></script>
 </body>
 </html>

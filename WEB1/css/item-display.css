@@ -28,22 +28,22 @@
 }
 
 .item-display-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .item-display-paragraph {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .item-display-button {
     padding: 1rem 2rem;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 8px;
-    background-color: #c01f13;
+    background-color: #AC1B11;
     transition: background-color 0.3s ease-in-out;
     font-weight: 700;
     cursor: pointer;
@@ -51,4 +51,41 @@
 
 .item-display-button:hover {
     background-color: #83160e;
+}
+
+@media (max-width: 768px) {
+    .item-display-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 30px;
+    }
+
+    .item-display-section-img {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    .item-display-section-content {
+        padding-left: 0;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item-display-section-text {
+        gap: 15px;
+    }
+
+    .item-display-title {
+        font-size: 1.3rem;
+    }
+
+    .item-display-paragraph {
+        font-size: 1rem;
+    }
+
+    .item-display-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
 }

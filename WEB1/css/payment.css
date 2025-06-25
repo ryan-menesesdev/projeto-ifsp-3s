@@ -14,8 +14,8 @@
 }
 
 .payment-section-title {
-    color: #c01f13;
-    font-size: 32px;
+    color: #AC1B11;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -25,14 +25,14 @@
     gap: 20px;
 }
 
-span {
-    color: #c01f13;
-    font-size: 24px;
+#next-steps-title {
+    color: #AC1B11;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .payment-section-text {
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 
 .payment-section-list {
@@ -42,3 +42,28 @@ span {
     list-style-type: disc
 }
 
+@media (max-width: 768px) {
+    .payment-section {
+        gap: 50px;
+        padding: 4rem 1rem;
+    }
+
+    .payment-section-title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #next-steps-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .payment-section-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .payment-section-list {
+        padding-left: 25px;
+    }
+}

@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     max-width: 90%;
-    height: 40vh; 
+    height: 50vh; 
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -41,7 +41,7 @@
     border-radius: 9999px;
     cursor: pointer;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     transition: background-color 0.3s ease-in-out;
     z-index: 10;
 }
@@ -72,7 +72,7 @@
     border-radius: 9999px;
     cursor: pointer;
     border: none;
-    font-size: 20px;
+    font-size: 1.4rem;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -102,3 +102,37 @@
 .dot.active {
     background-color: #fff;
 }
+
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 30vh;
+        max-width: 100%;
+    }
+
+    .carousel-nav-btn {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+    
+    .carousel-nav-btn.left {
+        left: 10px;
+    }
+    
+    .carousel-nav-btn.right {
+        right: 10px;
+    }
+    
+    .carousel-control-btn {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .carousel-dots {
+        gap: 6px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}   

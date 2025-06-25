@@ -1,0 +1,47 @@
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0rem 6rem;
+    width: 100%;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.filter-group label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.filter-select {
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        padding: 1rem;
+        justify-content: stretch;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .filter-group label {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .filter-select {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

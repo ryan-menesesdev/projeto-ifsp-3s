@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
     <meta charset="UTF-8">
+    <meta name="description" content="Acesse sua conta na Sinhá Bolos e Lanches para fazer pedidos e ver seu histórico.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="../assets/logo-better-nobackground.png">
@@ -9,45 +13,63 @@
     <link rel="stylesheet" href="../css/back.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/footer.css"> 
-    <title>Login</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Login - Sinhá Bolos e Lanches</title>
 </head>
 <body>
     <main>
         <div class="login-main-container">
             <div class="top-container">
-                <a class="top-link" href="index.html">
-                    <i class="fas fa-arrow-left"></i>
-                    <p>Voltar</p>
+                <a class="top-link" href="index.html" aria-label="Voltar para a página inicial">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    <span>Voltar</span>
                 </a>
+
                 <div class="register-container">
+                    <div class="header-accessibility-container">
+                        <button id="header-accessibility-toggle-btn" class="header-dropdown" aria-label="Abrir menu de acessibilidade" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-universal-access" aria-hidden="true"></i>
+                        </button>
+                        <div id="header-accessibility-menu" class="header-accessibility-menu">
+                            <div class="header-acessibility-content">
+                                <label for="font-size-control" class="header-acessibility-label">Tamanho da Fonte</label>
+                                <div id="font-size-control" class="header-acessibility-btn-container">
+                                    <button id="font-decrease-btn" class="header-acessibility-btn" aria-label="Diminuir fonte">A-</button>
+                                    <button id="font-reset-btn" class="header-acessibility-btn" aria-label="Resetar fonte">A</button>
+                                    <button id="font-increase-btn" class="header-acessibility-btn" aria-label="Aumentar fonte">A+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="register.html">
                         <button id="register-button" class="login-button">Registrar-se</button>
                     </a>
                 </div>                
             </div>
 
-            <section class="login-section">
+            <section class="login-section" aria-labelledby="login-title">
                 <div class="login-logo">
                     <div class="login-img-container">
-                        <img class="login-img" src="../assets/logo-better-nobackground.png">
+                        <img class="login-img" src="../assets/logo-better-nobackground.png" alt="">
                     </div>
-                    <h1 class="login-title">Sinhá Bolos e Lanches</h1>
+                    <h1 class="login-title" id="login-title">Sinhá Bolos e Lanches</h1>
                 </div>
 
                 <div class="form-container">
                     <form class="login-form">
                         <div class="login-input-container">
-                            <label class="login-label" for="email">Email</label>
-                            <input type="email" class="login-input" name="email" id="input-email" placeholder="Insira seu email" required>
+                            <label class="login-label" for="input-email">*Email</label>
+                            <input type="email" class="login-input" name="email" id="input-email" placeholder="Insira seu email" required autocomplete="email">
                         </div>
 
                         <div class="login-input-container">
-                            <label class="login-label" for="password">Senha</label>
-                            <input type="password" class="login-input" name="password" id="input-password" placeholder="Insira sua senha" required>
+                            <label class="login-label" for="input-password">*Senha</label>
+                            <input type="password" class="login-input" name="password" id="input-password" placeholder="Insira sua senha" required autocomplete="current-password">
                         </div>
 
                         <div id="login-button-container">
-                            <button id="login-button" class="login-button" type="submit">Login</button>
+                            <button id="login-button" class="login-button" type="submit">Entrar</button>
                         </div>
                     </form>
                 </div>
@@ -59,12 +81,18 @@
         <div class="footer-container">
             <p class="footer-text">©2025 Sinhá Bolos e Lanches. Todos os direitos reservados.</p>
             <p class="footer-text">Horário de funcionamento: 10h - 18h</p>
-            <p class="footer-text">
-                <a class="footer-link" href="index.html">Início</a> | 
-                <a class="footer-link" href="about.html">Sobre</a> | 
-                <a class="footer-link" href="contact.html">Contato</a> | 
-                <a class="footer-link" href="team.html">Equipe</a></p>
+            <nav aria-label="Navegação do rodapé">
+                <p class="footer-text">
+                    <a class="footer-link" href="index.html">Início</a> | 
+                    <a class="footer-link" href="about.html">Sobre</a> | 
+                    <a class="footer-link" href="contact.html">Contato</a> | 
+                    <a class="footer-link" href="team.html">Equipe</a>
+                </p>
+            </nav>
         </div>
     </footer>
+
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/dropdown.js"></script>
 </body>
 </html>

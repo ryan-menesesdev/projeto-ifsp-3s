@@ -7,32 +7,45 @@
 }
 
 .index-main-title {
-    color: #c01f13;
-    font-size: 32px;
-    font-weight: 500;
+    color: #AC1B11;
+    font-size: 2.2rem;
+    font-weight: 600;
     padding: 1rem 0rem;
     text-decoration-line: underline;
-}
-
-.index-section { 
-    width: 90%;
 }
 
 .index-section {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 90%;
 }
 
 .index-section-img {
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     border-radius: 8px;
     transition: opacity 0.3s ease-in-out;
+    object-fit: cover;
 }
 
 .index-section-img:hover {
     opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+    .index-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .index-section-img {
+        height: 25vh;
+    }
+
+    .index-main-title {
+        font-size: 1.5rem;
+    }
+}
 

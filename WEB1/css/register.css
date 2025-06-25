@@ -2,10 +2,6 @@ body {
     background-color: #f8dcd9;
 }
 
-.register-main-container {
-    padding: 1rem 1rem;
-}
-
 .register-section { 
     display: flex;
     justify-content: center;
@@ -33,8 +29,8 @@ body {
 }
 
 .register-title {
-    font-size: 32px;
-    color: #c01f13;
+    font-size: 2rem;
+    color: #90170E;
     border-radius: 8px;
     font-weight: 700;
 }
@@ -55,7 +51,7 @@ body {
 }
 
 .register-label {
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .register-input-container {
@@ -66,28 +62,65 @@ body {
 
 .register-input {
     padding: 1rem 1.5rem;
-    border: 1px solid #000000;
+    border: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .register-button {
     border: none;
     border-radius: 8px;
     padding: 1rem 2rem;
-    background-color: #c01f13;
+    background-color: #90170E;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 .register-button:hover {
-    background-color: #83160e;
+    background-color: #6e130c;
 }
 
 #register-button {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .register-section {
+        padding: 1rem 0;
+        gap: 24px;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .register-img {
+        width: 45%;
+    }
+
+    .register-title {
+        font-size: 1.6rem;
+    }
+
+    .register-form {
+        gap: 24px;
+    }
+    
+    .register-label {
+        font-size: 1rem;
+    }
+
+    .register-input {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .register-button {
+        font-size: 1.2rem;
+    }
 }

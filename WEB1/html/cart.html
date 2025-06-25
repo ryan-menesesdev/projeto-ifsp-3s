@@ -1,175 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/png" href="../assets/logo-better-nobackground.png">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css//back.css">
-    <link rel="stylesheet" href="../css/cart.css"> 
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <title>Equipe</title>
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="header-link">
-                <div class="header-left">
-                        <img src="../assets/logo-better-nobackground.png" alt="Logo da Empresa" class="header-logo">
-                        <p class="header-logo-title">Sinhá Bolos e Lanches</p>
-                </div>
-            </a>
-            <nav class="header-right">
-                <div class="header-cart-container">
-                    <a href="cart.html">
-                        <i class="fas fa-shopping-cart header-icon"></i>
-                        <span class="header-cart-count">0</span>
-                    </a>
-                </div>
-                <div class="header-dropdown-container">
-                    <p class="header-dropdown" id="menuDropdownToggle">
-                        Menu <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </p>
-                    <div class="header-dropdown-menu" id="menuDropdown">
-                        <a href="index.html">Início</a>
-                        <a href="about.html">Sobre</a>
-                        <a href="contact.html">Contato</a>
-                        <a href="team.html">Equipe</a>
-                        <a href="login.html">Sair</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Revise os itens no seu carrinho de compras, ajuste as quantidades e finalize seu pedido na Sinhá Bolos e Lanches.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="../assets/logo-better-nobackground.png">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/back.css">
+        <link rel="stylesheet" href="../css/cart.css"> 
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <title>Carrinho de Compras - Sinhá Bolos e Lanches</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="header-link" aria-label="Página Inicial de Sinhá Bolos e Lanches">
+                    <div class="header-left">
+                            <img src="../assets/logo-better-nobackground.png" alt="Logo da Sinhá Bolos e Lanches" class="header-logo">
+                            <span class="header-logo-title">Sinhá Bolos e Lanches</span>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="top-container">
-            <a class="top-link" href="index.html">
-                <i class="fas fa-arrow-left"></i>
-                <p>Voltar</p>
-            </a>
-        </div>
-        
-        <section class="cart-section">
-            <h1 class="cart-section-title">Carrinho</h2>
-            <div class="cart-section-container">
-                <div class="cart-section-item">
-                    <div class="cart-section-img-container">
-                        <img class="cart-section-img" src="../assets/avatar_placeholder.png">
-                        <h2 class="cart-section-name">Item A</h2>
-                    </div>
-
-                    <div class="cart-section-quantity-container">
-                        <button class="cart-section-button">
-                            <i class="fas fa-minus"></i>
+                </a>
+                <nav class="header-right" aria-label="Navegação principal">
+                    <div class="header-accessibility-container">
+                        <button id="header-accessibility-toggle-btn" class="header-dropdown" aria-label="Abrir menu de acessibilidade" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-universal-access" aria-hidden="true"></i>
                         </button>
-                        <p class="cart-section-quantity">Quantidade: 1</p>
+                        <div id="header-accessibility-menu" class="header-accessibility-menu">
+                            <div class="header-acessibility-content">
+                                <label for="font-size-control" class="header-acessibility-label">Tamanho da Fonte</label>
+                                <div id="font-size-control" class="header-acessibility-btn-container">
+                                    <button id="font-decrease-btn" class="header-acessibility-btn" aria-label="Diminuir fonte">A-</button>
+                                    <button id="font-reset-btn" class="header-acessibility-btn" aria-label="Resetar fonte">A</button>
+                                    <button id="font-increase-btn" class="header-acessibility-btn" aria-label="Aumentar fonte">A+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <button class="cart-section-button">
-                            <i class="fas fa-plus"></i>
+                    <div class="header-cart-container">
+                        <a href="cart.html" aria-label="Ver carrinho de compras">
+                            <i class="fas fa-shopping-cart header-icon" aria-hidden="true"></i>
+                            <span id="cart-counter" class="header-cart-count">0</span>
+                        </a>
+                    </div>
+                    <div class="header-dropdown-container">
+                        <button class="header-dropdown" id="menuDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown">
+                            Menu <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
                         </button>
+                        <div class="header-dropdown-menu" id="menuDropdown" role="menu">
+                            <a href="index.html" role="menuitem" aria-current="page">Início</a>
+                            <a href="orders.html" role="menuitem" aria-current="page">Meus pedidos</a>
+                            <a href="about.html" role="menuitem">Sobre</a>
+                            <a href="contact.html" role="menuitem">Contato</a>
+                            <a href="team.html" role="menuitem">Equipe</a>
+                            <a href="#" id="auth-link-dropdown" role="menuitem">Sair</a>
+                        </div>
                     </div>
-
-                    <div class="cart-section-price-container">
-                        <p class="cart-section-price">Preço: R$10,00</p>
-                    </div>
-
-                    <div class="cart-section-trash-container">
-                        <button class="cart-section-button">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="cart-section-item">
-                    <div class="cart-section-img-container">
-                        <img class="cart-section-img" src="../assets/avatar_placeholder.png">
-                        <h2 class="cart-section-name">Item B</h2>
-                    </div>
-
-                    <div class="cart-section-quantity-container">
-                        <button class="cart-section-button">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <p class="cart-section-quantity">Quantidade: 1</p>
-
-                        <button class="cart-section-button">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-
-                    <div class="cart-section-price-container">
-                        <p class="cart-section-price">Preço: R$10,00</p>
-                    </div>
-
-                    <div class="cart-section-trash-container">
-                        <button class="cart-section-button">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="cart-section-item">
-                    <div class="cart-section-img-container">
-                        <img class="cart-section-img" src="../assets/avatar_placeholder.png">
-                        <h2 class="cart-section-name">Item C</h2>
-                    </div>
-
-                    <div class="cart-section-quantity-container">
-                        <button class="cart-section-button">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <p class="cart-section-quantity">Quantidade: 1</p>
-
-                        <button class="cart-section-button">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-
-                    <div class="cart-section-price-container">
-                        <p class="cart-section-price">Preço: R$10,00</p>
-                    </div>
-
-                    <div class="cart-section-trash-container">
-                        <button class="cart-section-button">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-                    </div>
-                </div>
+                </nav>
             </div>
+        </header>
 
-            <div class="cart-section-total-container">
-                <h2 class="cart-section-total">Total: R$30,00</h2>
-            </div>
-
-            <div class="cart-section-payment">
-                <select class="cart-section-select">
-                    <option class="cart-section-option" selected disabled>Selecione uma opção</option>
-                    <option class="cart-section-option">Pix</option>
-                    <option class="cart-section-option">Dinheiro</option>
-                </select>
-
-                <a href="../html/payment.html">
-                    <button class="cart-section-button-payment">Finalizar compra</button>
+        <main>
+            <div class="top-container">
+                <a class="top-link" href="index.html" aria-label="Voltar para a página inicial">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    <span>Voltar</span>
                 </a>
             </div>
-        </section>
-    </main>
+            
+            <section class="cart-section" aria-labelledby="cart-main-title">
+                <h1 class="cart-section-title" id="cart-main-title">Carrinho</h1>
 
-    <footer>
-        <div class="footer-container">
-            <p class="footer-text">©2025 Sinhá Bolos e Lanches. Todos os direitos reservados.</p>
-            <p class="footer-text">Horário de funcionamento: 10h - 18h</p>
-            <p class="footer-text">
-                <a class="footer-link" href="index.html">Início</a> | 
-                <a class="footer-link" href="about.html">Sobre</a> | 
-                <a class="footer-link" href="contact.html">Contato</a> | 
-                <a class="footer-link" href="team.html">Equipe</a></p>
+                <ul class="cart-section-container" id="cart-items-list">
+                    <li><p>Carregando seu carrinho...</p></li>
+                </ul>
+
+                <div class="cart-section-total-container" aria-live="polite">
+                    <h2 class="cart-section-total" id="cart-total-price">Total: R$ 0,00</h2>
+                </div>
+
+                <div class="cart-section-payment">
+                    <div class="cart-section-select-container">
+                        <label for="payment-method" class="cart-section-select-label">*Forma de Pagamento:</label>
+                        <select class="cart-section-select" id="payment-method">
+                            <option value="" selected disabled>*Selecione a forma de pagamento</option>
+                            <option value="Pix">Pix</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                        </select>
+                    </div>
+
+                    <div class="cart-section-button-container">
+                        <button class="cart-section-button-payment" id="checkout-button">Finalizar compra</button>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p class="footer-text">©2025 Sinhá Bolos e Lanches. Todos os direitos reservados.</p>
+                <p class="footer-text">Horário de funcionamento: 10h - 18h</p>
+                <p class="footer-text">
+                    <a class="footer-link" href="index.html">Início</a> | 
+                    <a class="footer-link" href="about.html">Sobre</a> | 
+                    <a class="footer-link" href="contact.html">Contato</a> | 
+                    <a class="footer-link" href="team.html">Equipe</a></p>
+            </div>
+        </footer>
+
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/main.js" type="module"></script>
+        <div id="confirmation-modal" class="modal-overlay">
+            <div class="modal-content">
+                <h2 id="modal-title">Título da Confirmação</h2>
+                <p id="modal-message">Mensagem de confirmação vai aqui.</p>
+                <div class="modal-actions">
+                    <button id="modal-cancel-btn" class="modal-button cancel">Cancelar</button>
+                    <button id="modal-confirm-btn" class="modal-button confirm">Confirmar</button>
+                </div>
+            </div>
         </div>
-    </footer>
-
-    <script src="../js/dropdown.js"></script>
-</body>
+    </body>
 </html>

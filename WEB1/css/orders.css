@@ -1,0 +1,139 @@
+.orders-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.orders-section-title {
+    color: #AC1B11;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    gap: 32px;
+}
+
+.order-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    word-break: break-all;
+}
+
+.order-card-subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.order-card-status {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    color: white;
+    background-color: #f0ad4e;
+}
+
+.order-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order-card-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+ .order-card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.order-card-items-subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.order-card-items-list {
+    list-style: none;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.order-card-items-item {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .orders-section {
+        gap: 30px;
+        padding: 2rem 1rem;
+    }
+
+    .orders-section-title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .order-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 1rem;
+    }
+
+    .order-card-subtitle {
+        font-size: 1rem;
+    }
+
+    .order-card-status {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.75rem;
+    }
+
+    .order-card-body {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .order-card-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .order-card-text {
+        font-size: 1rem;
+    }
+
+    .order-card-items-subtitle {
+        font-size: 1rem;
+    }
+}

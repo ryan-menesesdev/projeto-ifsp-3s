@@ -2,42 +2,60 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Conheça a equipe de desenvolvedores por trás do site da Sinhá Bolos e Lanches.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="../assets/logo-better-nobackground.png">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css//back.css">
+    <link rel="stylesheet" href="../css/back.css">
     <link rel="stylesheet" href="../css/team.css"> 
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
-    <title>Equipe</title>
+    <title>Equipe - Sinhá Bolos e Lanches</title>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html" class="header-link">
+            <a href="index.html" class="header-link" aria-label="Página Inicial de Sinhá Bolos e Lanches">
                 <div class="header-left">
-                        <img src="../assets/logo-better-nobackground.png" alt="Logo da Empresa" class="header-logo">
-                        <p class="header-logo-title">Sinhá Bolos e Lanches</p>
+                        <img src="../assets/logo-better-nobackground.png" alt="Logo da Sinhá Bolos e Lanches" class="header-logo">
+                        <span class="header-logo-title">Sinhá Bolos e Lanches</span>
                 </div>
             </a>
-            <nav class="header-right">
+            <nav class="header-right" aria-label="Navegação principal">
+                <div class="header-accessibility-container">
+                    <button id="header-accessibility-toggle-btn" class="header-dropdown" aria-label="Abrir menu de acessibilidade" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                    </button>
+                    <div id="header-accessibility-menu" class="header-accessibility-menu">
+                        <div class="header-acessibility-content">
+                            <label for="font-size-control" class="header-acessibility-label">Tamanho da Fonte</label>
+                            <div id="font-size-control" class="header-acessibility-btn-container">
+                                <button id="font-decrease-btn" class="header-acessibility-btn" aria-label="Diminuir fonte">A-</button>
+                                <button id="font-reset-btn" class="header-acessibility-btn" aria-label="Resetar fonte">A</button>
+                                <button id="font-increase-btn" class="header-acessibility-btn" aria-label="Aumentar fonte">A+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="header-cart-container">
-                    <a href="cart.html">
-                        <i class="fas fa-shopping-cart header-icon"></i>
-                        <span class="header-cart-count">0</span>
+                    <a href="cart.html" aria-label="Ver carrinho de compras">
+                        <i class="fas fa-shopping-cart header-icon" aria-hidden="true"></i>
+                        <span id="cart-counter" class="header-cart-count">0</span>
                     </a>
                 </div>
                 <div class="header-dropdown-container">
-                    <p class="header-dropdown" id="menuDropdownToggle">
-                        Menu <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </p>
-                    <div class="header-dropdown-menu" id="menuDropdown">
-                        <a href="index.html">Início</a>
-                        <a href="about.html">Sobre</a>
-                        <a href="contact.html">Contato</a>
-                        <a href="team.html">Equipe</a>
-                        <a href="login.html">Sair</a>
+                    <button class="header-dropdown" id="menuDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown">
+                        Menu <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </button>
+                    <div class="header-dropdown-menu" id="menuDropdown" role="menu">
+                        <a href="index.html" role="menuitem" aria-current="page">Início</a>
+                        <a href="orders.html" role="menuitem" aria-current="page">Meus pedidos</a>
+                        <a href="about.html" role="menuitem">Sobre</a>
+                        <a href="contact.html" role="menuitem">Contato</a>
+                        <a href="team.html" role="menuitem">Equipe</a>
+                        <a href="#" id="auth-link-dropdown" role="menuitem">Sair</a>
                     </div>
                 </div>
             </nav>
@@ -47,30 +65,36 @@
     <main>
         <div class="team-main-container">
             <div class="top-container">
-                <a class="top-link" href="index.html">
-                    <i class="fas fa-arrow-left"></i>
-                    <p>Voltar</p>
+                <a class="top-link" href="index.html" aria-label="Voltar para a página inicial">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    <span>Voltar</span>
                 </a>
             </div>
             
-            <section class="team-section">
-                <h1 class="team-section-title">Desenvolvedores</h2>
-                <div class="team-section-container">
-                    <div class="team-section-img-container">
-                        <img class="team-section-img" src="../assets/avatar_placeholder.png">
-                        <p class="team-section-name">Igor Modesto</p>
-                    </div>
+            <section class="team-section" aria-labelledby="team-main-title">
+                <h1 class="team-section-title" id="team-main-title">Desenvolvedores</h1>
+                <ul class="team-section-container">
+                    <li>
+                        <figure class="team-section-img-container">
+                            <img class="team-section-img" src="../assets/igor.jpg" alt="Foto de Igor Modesto">
+                            <figcaption class="team-section-name">Igor Modesto</figcaption>
+                        </figure>
+                    </li>
 
-                    <div class="team-section-img-container">
-                        <img class="team-section-img" src="../assets/avatar_placeholder.png">
-                        <p class="team-section-name">Jean Macedo</p>
-                    </div>
+                    <li>
+                        <figure class="team-section-img-container">
+                            <img class="team-section-img" src="../assets/jean.jpg" alt="Foto de Jean Macedo">
+                            <figcaption class="team-section-name">Jean Macedo</figcaption>
+                        </figure>
+                    </li>
 
-                    <div class="team-section-img-container">
-                        <img class="team-section-img" src="../assets/avatar_placeholder.png">
-                        <p class="team-section-name">Ryan Meneses</p>
-                    </div>
-                </div>
+                    <li>
+                        <figure class="team-section-img-container">
+                            <img class="team-section-img" src="../assets/ryan.webp" alt="Foto de Ryan Meneses">
+                            <figcaption class="team-section-name">Ryan Meneses</figcaption>
+                        </figure>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
@@ -79,14 +103,18 @@
         <div class="footer-container">
             <p class="footer-text">©2025 Sinhá Bolos e Lanches. Todos os direitos reservados.</p>
             <p class="footer-text">Horário de funcionamento: 10h - 18h</p>
-            <p class="footer-text">
-                <a class="footer-link" href="index.html">Início</a> | 
-                <a class="footer-link" href="about.html">Sobre</a> | 
-                <a class="footer-link" href="contact.html">Contato</a> | 
-                <a class="footer-link" href="team.html">Equipe</a></p>
+            <nav aria-label="Navegação do rodapé">
+                <p class="footer-text">
+                    <a class="footer-link" href="index.html">Início</a> | 
+                    <a class="footer-link" href="about.html">Sobre</a> | 
+                    <a class="footer-link" href="contact.html">Contato</a> | 
+                    <a class="footer-link" href="team.html">Equipe</a>
+                </p>
+            </nav>
         </div>
     </footer>
 
     <script src="../js/dropdown.js"></script>
+    <script src="../js/main.js" type="module"></script>
 </body>
 </html>
